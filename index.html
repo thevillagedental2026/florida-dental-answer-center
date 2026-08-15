@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Florida Dental Answer Center | The Village Dental</title>
+  <meta name="description" content="Clear, searchable answers about dental emergencies, tooth pain, treatments, prevention, insurance, and finding help in Florida.">
+  <meta name="theme-color" content="#123f43">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#answers">Skip to answers</a>
+  <header class="site-header">
+    <a class="brand" href="https://thevillagedentalmiami.com/" rel="home">
+      <span class="brand-mark" aria-hidden="true">V</span>
+      <span><strong>The Village Dental</strong><small>Florida Dental Answer Center</small></span>
+    </a>
+    <a class="header-link" href="https://thevillagedentalmiami.com/contact/">Contact the practice</a>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Straight answers. Safer next steps.</p>
+        <h1 id="hero-title">What can we help you understand?</h1>
+        <p>Explore plain-language dental information and evergreen article angles for Miami and Pinecrest readers. Search a symptom, procedure, cost question, or concern.</p>
+        <label class="search-box">
+          <span class="sr-only">Search dental questions</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.3-4.3m2.3-5.2a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
+          <input id="search" type="search" placeholder="Try “broken tooth” or “insurance”" autocomplete="off">
+          <kbd>/</kbd>
+        </label>
+      </div>
+      <aside class="urgent-card" aria-labelledby="urgent-title">
+        <p class="urgent-label">Need help now?</p>
+        <h2 id="urgent-title">Some symptoms should not wait.</h2>
+        <p>Call 911 for trouble breathing, uncontrolled bleeding, major facial trauma, or swelling that affects breathing or swallowing.</p>
+        <a href="#emergency-guide">Open the emergency guide →</a>
+      </aside>
+    </section>
+
+    <section class="notice" aria-label="Medical disclaimer">
+      <strong>Education, not diagnosis.</strong> This resource cannot evaluate your symptoms or replace care from a licensed dentist. <button type="button" data-dialog-open>Read the full disclaimer</button>
+    </section>
+
+    <section class="explorer" id="answers" aria-labelledby="answers-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Browse the library</p><h2 id="answers-title">Dental questions and answers</h2></div>
+        <p id="result-count" aria-live="polite">Loading answers…</p>
+      </div>
+      <div id="filters" class="filters" aria-label="Filter by topic"></div>
+      <div id="answer-list" class="answer-list"></div>
+      <div id="empty-state" class="empty-state" hidden>
+        <h3>No matching answers yet</h3><p>Try a shorter search or browse all topics. This resource does not interpret symptoms.</p>
+        <button type="button" id="clear-search">Clear search</button>
+      </div>
+    </section>
+
+    <section id="emergency-guide" class="emergency-guide" aria-labelledby="emergency-title">
+      <div><p class="eyebrow">Quick reference</p><h2 id="emergency-title">Dental emergency guide</h2></div>
+      <div class="guide-grid">
+        <article><span>01</span><h3>Protect breathing</h3><p>Call 911 for breathing or swallowing difficulty, major facial trauma, or uncontrolled bleeding.</p></article>
+        <article><span>02</span><h3>Protect the tooth</h3><p>Handle a knocked-out permanent tooth by the crown. Keep it moist and get dental care immediately.</p></article>
+        <article><span>03</span><h3>Call a dentist</h3><p>For severe pain, swelling, a broken tooth, or a lost restoration, ask a dentist how quickly you should be seen.</p></article>
+      </div>
+    </section>
+
+    <section class="local-card">
+      <div><p class="eyebrow">A local resource</p><h2>Created by The Village Dental in Pinecrest</h2><p>This open resource supports informed conversations with your own dental professional. If you are near Pinecrest, the practice can answer scheduling questions and help determine whether an urgent visit is appropriate.</p></div>
+      <div class="local-actions"><a class="button" href="tel:+13052515558">Call 305-251-5558</a><a href="https://thevillagedentalmiami.com/contact/">Practice information →</a></div>
+    </section>
+  </main>
+
+  <footer><p>Florida Dental Answer Center · An educational project from <a href="https://thevillagedentalmiami.com/">The Village Dental</a></p><p><a href="https://github.com/thevillagedental2026/florida-dental-answer-center" aria-label="View this open resource on GitHub">Open-source project</a> · Last editorial review: August 2026</p></footer>
+
+  <dialog id="disclaimer-dialog">
+    <button class="dialog-close" type="button" data-dialog-close aria-label="Close disclaimer">×</button>
+    <p class="eyebrow">Important information</p><h2>Medical disclaimer</h2>
+    <p>The Florida Dental Answer Center provides general educational information only. It does not diagnose conditions, recommend an individualized treatment, establish a dentist–patient relationship, or replace an examination by a licensed professional.</p>
+    <p>Symptoms can have many causes. Contact a dentist or other qualified health professional for advice appropriate to your situation. Call 911 for a possible medical emergency.</p>
+    <button class="button" type="button" data-dialog-close>I understand</button>
+  </dialog>
+  <script src="assets/offline-data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

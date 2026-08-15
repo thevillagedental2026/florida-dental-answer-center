@@ -1,0 +1,11 @@
+{
+  "name": "florida-dental-answer-center",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A searchable public dental education resource for Florida patients.",
+  "scripts": {
+    "build": "node scripts/build-offline-data.mjs",
+    "test": "node scripts/validate-data.mjs && node scripts/build-offline-data.mjs"
+  },
+  "license": "MIT"
+}
